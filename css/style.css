@@ -1,0 +1,334 @@
+/* 
+
+  PADRONIZAÇÃO
+
+*/
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+  color: #173347;
+}
+
+/* 
+    FULL HEIGHT 
+*/
+html{
+  height: 100%;
+} 
+body, main{
+
+  height: 100vh;
+}
+
+.inicio, .sobre-section{
+  width: 100%;
+  height: 100%;
+
+}
+.margin-zero{
+  margin: 0 !important;
+}
+
+/* 
+    FONT 
+*/
+.text{
+  text-transform:uppercase;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.text-title{
+  font-size: 3rem;
+  font-weight: bold;
+  color: #265475;
+  text-shadow: 0px 4px 5px  gray;
+  
+}
+.text-lower{
+  text-transform:initial;
+}
+.title-sub{
+  color:#265475;
+  font-size: 1.5rem;
+}
+.text-white{
+  color: #E5E5E5 !important;
+}
+/* 
+
+  MENU 
+
+*/
+.menu-bg{
+
+    background-color: #265475;
+    
+}
+.menu-h{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+    box-shadow: 0px 2px 5px gray;
+    
+    
+}
+
+.menu-h ul{
+    display: flex;
+    justify-content:space-between;
+    list-style-type: none;
+}
+.menu-h ul li, .logo{
+    height: 100%;
+    
+    margin: 0 20px;
+    padding: 1px 40px;
+
+
+    
+
+}
+
+.menu-h ul li a, .logo a{
+    
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+   
+}
+.menu-h ul li a:hover{
+
+  border-bottom: 2px solid #173347;
+  transition: all 1s;
+  
+}
+/* 
+  HEADER
+*/
+
+.header-bg{
+  width: 100%;
+  height: 100%;
+  background-image: url("/00_design/pexels.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0% 15%;
+ 
+}
+.header-flex{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 89%;
+
+
+  
+
+}
+.conteudo-ini{
+
+  background-color: rgba(167,209,228, 0.6);
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 0px 0px 20px 20px;
+  opacity: 0.8;
+  padding-bottom: 20px;
+  position: relative;
+  box-shadow: 0px 2px 5px gray;
+
+}
+
+.conteudo-ini h1{
+  font-size: 5rem;
+
+}
+.conteudo-ini p{
+  font-size: 2rem;
+  color:#265475;
+  text-transform: initial;
+  text-shadow: 0px 2px 5px  gray;
+}
+
+.saiba-mais{
+  margin: 20px auto;
+  text-align: center;
+
+
+
+}
+.saiba-mais p{
+  font-size: 2rem;
+  color: #265475;
+  text-transform: initial;
+  text-shadow: 0px 0px 5px  gray;
+}
+/* 
+  MAIN || SOBRE || TRATAMENTOS || LOCALIDADE
+*/
+.container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 50px 0;
+  box-shadow:  0px 0px 30px #A7D1E4;
+}
+.sect-esq, .sect-dir{
+  display: flex;
+  background-color: #E5E5E5;
+  justify-content: center;
+  
+}
+
+.sect-painel{
+  width: 80%;
+ 
+}
+.sect-painel-bg{
+  background-color: #A7D1E4;
+}
+.sect-esq img{
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  height: 90vh;
+  margin: 40px auto;
+  box-shadow: 0px 0px 20px;
+
+}
+.sect-dir .sect-texto{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  
+  width: 90%;
+  height: 90vh;
+  margin: 40px auto;
+}
+
+.sect-texto h3{
+  text-align: center;
+}
+.sect-texto p{
+  font-size: 1.5rem;
+  color: #173347;;
+}
+.botao{
+  width: 250px;
+  margin: 0 auto;
+  height: 70px;
+  border-radius: 50px;
+  transition: background-color 1s;
+  box-shadow:  2px 2px 5px black;
+  text-align: center;
+  background-color: #173347;
+  border: none;
+  cursor: pointer;
+  
+}
+.botao:hover{
+  background-color:#A7D1E4;
+ 
+  transition: background-color 1s;
+}
+.botao a{
+  font-size: 1rem;
+  color: #E5E5E5;
+  text-decoration: none;
+  transition: color 1s;
+}
+.botao a:hover{
+  color: #173347;
+  transition: color 1s;
+}
+.botao-fim{
+  position: fixed;
+  width: 80px;
+  height: 40px;
+  bottom: 10px;
+  right: 10px;
+}
+/* 
+  MAIN || LOCALIDADE > MAPA
+*/
+#mapa{
+  justify-content: center;
+  width: 100%;
+  height: 300px;
+  margin: 0 auto;
+  background-image: url("../assets/mapa.png");
+  box-shadow: inset 0px 0px 5px black;
+}
+.social-logo{
+  width: 80px;
+}
+
+/* 
+  FOOTER
+*/
+footer{
+  font-weight: bold;
+  padding: 10px;
+  text-align: center;
+  background-color: #173347;
+  color: #E5E5E5;
+}
+
+/* 
+  FORMULÁRIO PAGINA CONTATO
+*/
+.formulario form{
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  height: 90vh;
+  margin: 40px auto;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 600px;
+  
+  color: white;
+  background-color:#173347;
+  padding: 20px 0;
+  border-radius: 20px;
+  box-shadow: 2px 2px 20px black;
+
+}
+form h1{
+  text-align: center;
+  margin: 40px 0px;
+  text-shadow:  2px 2px 5px black;
+}
+form label{
+  margin: 0px 50px;
+}
+form input, textarea{
+  background-color: #E5E5E5;
+  height: 70px;
+  margin: 10px 50px;
+  border-radius: 10px;
+  border: 0;
+  color: #173347;
+  transition: background-color 1s;
+  box-shadow: inset 2px 2px 5px black;
+  text-indent: 20px;
+}
+textarea{
+  height: 50%;
+  outline: none;
+  padding: 20px 0;
+}
+
+form input:focus, textarea:focus{
+  outline: none;
+  background-color: #A7D1E4;
+  transition: background-color 1s;
+}

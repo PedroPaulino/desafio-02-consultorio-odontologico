@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/01_codigo/css/style.css">
+    <title>OdontoMedica - Website</title>
+</head>
+
+<body>
+    <header id="inicio" class="header-bg">
+        <nav class="menu-h menu-bg text">
+            <span class="logo"><a href="./index.html" class="text ">OdontoMedica</a></span>
+            <ul>
+                <li onclick="irPara('inicio')"><a onclick="irPara('inicio')"> Inicio </p></li>
+                <li onclick="irPara('sobre')"><a onclick="irPara('sobre')" > Sobre </a></li>
+                <li onclick="irPara('tratamentos')"><a onclick="irPara('tratamentos')"> Tratamentos </a></li>
+                <li onclick="irPara('endereco')"><a onclick="irPara('endereco')"> Endereço</a></li>
+                <li><a href="./pages/contato.html"> Contato </a></li>
+            </ul>
+        </nav>
+
+
+        <div class="header-flex">
+            <div class="conteudo-ini text">
+
+                <h1 class="text text-title"> OdontoMedica </h1>
+                <p> Sua essência em um sorriso</p>
+
+
+            </div>
+            <div class="saiba-mais text">
+                <button class="botao" onclick="irPara('sobre')"><a onclick="irPara('sobre')"class="text">Saiba mais</a></button>
+            </div>
+        </div>
+
+
+    </header>
+
+    <main onload="toast()">
+        <!-- Sobre  -->
+        <section id="sobre" class="container">
+
+            <article class="sect-esq">
+                <div class="sect-painel sect-painel-bg">
+                    <img src="./assets/foto-clinica.jpg" alt="imagem da clinica">
+                </div>
+            </article>
+
+            <article class="sect-dir">
+                <div class="sect-painel">
+                    <div class="sect-texto">
+                        <h3 class="text text-title">OdontoMedica</h3>
+                        <p class="text text-lower">Somos a maior clinica odontológica da cidade, com mais de 10 anos de
+                            experiência, com qualidade e
+                            excelência no trabalho, oferecemos soluções para todas as áreas da odontologia.</p>
+
+                        <button class="botao" onclick="irPara('tratamentos')"><a onclick="irPara('tratamentos')" class="text">Tratamentos</a></button>
+                    </div>
+
+                </div>
+            </article>
+
+        </section>
+
+        <!-- Tratamentos-->
+        <section id="tratamentos" class="container">
+
+            <article class="sect-esq">
+                <div class="sect-painel sect-painel-bg">
+                    <img src="./assets/dentista.jpg" alt="imagem da clinica">
+                </div>
+            </article>
+
+            <article class="sect-dir">
+                <div class="sect-painel">
+                    <div class="sect-texto">
+                        <h3 class="text text-title">Tratamentos</h3>
+
+                        <div>
+                            <h4 class="text title-sub">Ortodontia</h4>
+                            <p class="text text-lower">Correção de dentes desalinhados e tortos</p>
+                        </div>
+                        <div>
+                            <h4 class="text title-sub">Implantodontia</h4>
+                            <p class="text text-lower">Substituição de um ou de mais dentes através de implantes de pino</p>
+                        </div>
+                        <div>
+                            <h4 class="text title-sub">Odontopediatria</h4>
+                            <p class="text text-lower">Especialidade que visa cuidar da saúde bucal dos pequenos.</p>
+                        </div>
+
+                        <button class="botao" onclick="irPara('endereco')"><a class="text" onclick="irPara('endereco')" >Endereço</a></button>
+                    </div>
+
+                </div>
+            </article>
+
+        </section>
+
+         <!-- Endereço -->
+         <section id="endereco" class="container margin-zero">
+
+            <article class="sect-esq">
+                <div class="sect-painel sect-painel-bg">
+                    <img src="./assets/medico.jpg" alt="imagem da clinica">
+                </div>
+            </article>
+
+            <article class="sect-dir">
+                <div class="sect-painel">
+                    <div class="sect-texto">
+                        <h3 class="text text-title">Endereço</h3>
+
+                        <div>
+                            <h4 class="text title-sub">Endereço</h4>
+                            <p class="text text-lower">Av. conceição dos ares, N 123, centro</p>
+                            <div id="mapa">
+                                
+                            </div>
+        
+                        </div>
+                        <div class="redes-sociais">
+                            <h4 class="text title-sub">Redes Sociais</h4>
+                            <a href="#"><p class="text text-lower"> Facebook </p></a>
+                            <p class="text text-lower"><a href="#"> Instagram </a></p>
+                            
+                        </div>
+                        <button class="botao"><a href="./pages/contato.html" class="text">Agendar Consulta</a></button>
+                    </div>
+                    
+                </div>
+                
+            </article>
+
+        </section>
+        <button id="toast" class="botao botao-fim" onclick="irPara('inicio')"><a class="text">Subir</a></button> 
+        <footer class="text"> Pedro Soares Paulino &copy;  2022 </footer>
+    </main>
+    
+</body>
+
+<script src="./js/config.js">
+
+</script>
+</html>
